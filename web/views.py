@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import json
 import logging
-import xmlrpclib
+#import xmlrpclib
 from datetime import datetime
 import requests
 from requests import Session, Request
@@ -23,7 +23,7 @@ from django.template.context import Context
 from django.template.loader import get_template
 from django.template.loader import render_to_string
 from django.views.decorators.csrf import csrf_protect
-from weasyprint import CSS, HTML
+#from weasyprint import CSS, HTML
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 
