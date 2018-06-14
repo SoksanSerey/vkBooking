@@ -95,6 +95,7 @@
                                             <div class="card-row-image"
                                                  data-background-image="{% static 'img/defult.png' %}">
                                                 <div class="card-row-label"><a href="">{{ accommo.name }}</a></div>
+                                                <div class="card-row-label"><a href="">{{ accommo.name }}</a></div>
                                                 <!-- /.card-row-label -->
 
                                                 <div class="card-row-price">${{ accommo.price }} / night</div><!-- -->
@@ -127,12 +128,12 @@
                                                         <label for="{{ accommo.name }}"></label>
                                                         <select name="{{ accommo.name }}" data-amount = "{{ accommo.amount }}" id="{{ accommo.aid|safe }}">
 
-                                                            {% comment %}{% for room in accommo.get_room_amount %}
+                                                            {% for room in accommo.get_room_amount %}
                                                                 <option value="{{ room }}">{{ room }} room(s)</option>
-                                                            {% endfor %}{% endcomment %}
+                                                            {% endfor %}
 
                                                         </select>
-                                                        {% comment %}Third field{% endcomment %}
+                                                        Third field
                                                     </dt>
                                                 </dl>
                                             </div><!-- /.card-row-properties -->

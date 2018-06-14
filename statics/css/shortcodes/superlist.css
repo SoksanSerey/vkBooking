@@ -3363,7 +3363,7 @@ h2.widgettitle {
 }
 
 .card-row-price {
-    background-color: #009f8b;
+    background-color: red;
     bottom: 0px;
     color: #fff;
     font-size: 13px;
