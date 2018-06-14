@@ -72,29 +72,41 @@
                                 </div>
                                 <!-- End Check-in and check-out -->
                             </div>
-
-                            <div class="card-row">
-
+                       {% comment %} <img width="570" height="670" src="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a-570x670.jpg" class="attachment-shop_single size-shop_single" alt="" srcset="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a.jpg 570w, http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a-255x300.jpg 255w, http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a-270x317.jpg 270w" sizes="(max-width: 570px) 100vw, 570px">
+                       <img role="presentation" alt="" src="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 741px; height: 871px; border: none; max-width: none; max-height: none;"> {% endcomment %}
+                            <div class="card-row">{% comment %}
                             <div class="col-2"></div>
-                            <div class="col-2"></div>
+                            <div class="col-2"></div>{% endcomment %}
                                 {% for accommo in accommodation %}
                                     <div class="card-row card-border">
                                         <div class="card-row-inner">
                                         {% if accommo.image %}
-                                            <div class="card-row-image"
-                                                 data-background-image="{{ accommo.image.url }}"
-                                                 style="background-image: url({{ accommo.image.url }});">
-                                                <div class="card-row-label"><strong><a href="">{{ accommo.name }}</a></strong></div>
+                                            <div class="card-row-image">
+                                              <img class=" col-6" src="{{ accommo.image.url }}" style="width: 150px">
+                                              <img class=" col-6" src="{{ accommo.image.url }}" style="width: 150px">
+                                            </div>
+
+                                               {% comment %}style="background-image: url({{ accommo.image.url }} );"{% endcomment %}
+                            {% comment %}                <div class="row">
+                                                   <img class="col-6" src="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a.jpg" style="width: 100px">
+                                                   <img class="col-6" src="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a.jpg" style="width: 100px">
+                                            </div>
+                                                <div class="row">
+                                                   <img class="col-6" src="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a.jpg" style="width: 100px">
+                                                   <img class="col-6" src="http://demo.harutheme.com/stber/wp-content/uploads/2018/01/women-bag-1a.jpg" style="width: 100px">
+                                                </div>{% endcomment %}
+
+
+
+                                                {% comment %}<div class="card-row-label"><strong><a href="">{{ accommo.name }}</a></strong></div>{% endcomment %}
                                                 <!-- /.card-row-label -->
 
-                                                <div class="card-row-price" id="a">
+                                                {% comment %}<div class="card-row-price" id="a">
                                                     ${{ accommo.price }} / night
-                                                    <div class="col-2">Hello</div>
-                                                </div><!-- -->
-                                             <div class="card-row-price">
+                                                </div>{% endcomment %}
 
-                                                    <div class="col-2">Hello</div>
-                                                </div><!-- -->
+                                            {% comment %} <div class="card-row-price">
+                                                </div><!-- -->{% endcomment %}
 
 
                                             </div><!-- /.card-row-image -->
